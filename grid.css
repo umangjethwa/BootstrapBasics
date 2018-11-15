@@ -7,3 +7,53 @@ h3{
 
     background-color: pink;
 }
+
+.Tablecontainer{
+
+    background-color: none;
+}
+
+.Tablecontainer{
+
+    background-color: rgb(226, 168, 43)   
+}
+.buttoncontainer{
+
+    background-color: lightskyblue(243, 187, 187);
+}
+
+body{
+
+    background-color: rgb(68, 75, 71);
+}
+
+#nav{
+
+    background-color: rgb(228, 228, 111);
+    
+}
+
+.jumbotron{
+
+    background-color: rgb(91, 46, 133);
+    border: 3px solid rgb(204, 3, 29);
+}
+
+#progressbar{
+
+    background-color: lightskyblue;
+    border: 3px solid rgb(223, 14, 24);
+}
+
+#bo,#ae,#navbar{
+
+    background-color: lightskyblue;
+    border: 3px solid #73AD21;
+}
+
+#searchbar{
+
+    position: relative;
+    left: 25%;
+    border: 3px solid #73AD21;
+}

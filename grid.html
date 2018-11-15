@@ -1,96 +1,341 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap 4 Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="grid.css">
-</head>
-<body>
-
-    <div class="container">
-        <div class="row">
-          <div  id ="d1"class="col-sm-4">
-            <h3 id="c1">Column 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Column 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Column 3</h3>        
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-          </div>
-        </div>
-      </div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Bootstrap 4 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="bs.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="grid.css">
+  </head>
+  <body>
       
-      <div class="container">
-      <div class="row">
-          <div class="col-sm-4">
-              <h3 id="c1">Column 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div class="container">
+      <div id = "navbar">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="https://country-cell-phone-repair.business.site/">
+          <img src="ccprlogo.jpg" alt="logo" style="width:40px;">
+        </a>
+        
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Apple</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Samsung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nokia</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">LG</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">ZTE</a>
+          </li>
+        </ul>
+
+        <div id ="searchbar">  
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+              <form class="form-inline" action="https://www.google.com/">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </nav>
           </div>
-          <div class="col-sm-8">
-              <h3 id="c1">Column 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-          </div>
+      </nav>
+      </div>
+    </div>
+          
+    <div class="container">
+        <div id = "nav">  
+        <h2>Nav</h2>
+          <p>Basic horizontal menu:</p>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="container">
+      <div class="jumbotron">
+          <h1>Bootstrap Tutorial</h1> 
+          <p>Bootstrap is the most popular HTML, CSS...</p> 
+      </div>
+      </div>
+
+      <div class="container">
+        <div id="progressbar"> 
+        <h2>Animated Progress Bar</h2>
+          <p>Add the .progress-bar-animated class to animate the progress bar:</p> </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"></div>
+          </div>
+        
+      </div> 
+    </br>
+      <div class = "container">
+        <div id="bo"><h2>Button Outline </h2></div>  
+        <div  class="buttoncontainer">
+            <div class = "btn-group">
+              <button type = "button" id = "b1"  class = "btn btn-outline-primary" >Primary</button>
+              <button type="button" class="btn btn-outline-secondary">Secondary</button>
+              <button type="button" class="btn btn-outline-success">Success</button>
+              <button type="button" class="btn btn-outline-info">Info</button>
+              <button type="button" class="btn btn-outline-warning">Warning</button>
+              <button type="button" class="btn btn-outline-danger">Danger</button>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+              <button type="button" class="btn btn-outline-light text-dark">Light</button>
+              <a href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_elements&stacked=h" class="btn btn-info" role="button">Link Button</a>
+              <button type="button" class="btn btn-info">Button</button>
+              <input type="button" class="btn btn-info" value="Input Button">
+              <input type="submit" class="btn btn-info" value="Submit Button">
+              <script type="text/javascript" src="bs.js"></script>             
+            </div>
+            <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+
+            </div>
+
+            <div class="btn-group btn-group-sm"> <!-- lg for large btn-->
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Sony
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Tablet</a>
+                  <a class="dropdown-item" href="#">Smartphone</a>
+                </div>
+              </div>
+
+              <div class="btn-group-vertical">
+                  <button type="button" class="btn btn-primary">Apple</button>
+                  <button type="button" class="btn btn-primary">Samsung</button>
+                  <button type="button" class="btn btn-primary">Sony</button>
+                </div>
+
+                <button type="button" class="btn btn-primary">Sony</button>
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                  <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Tablet</a>
+                  <a class="dropdown-item" href="#">Smartphone</a>
+                </div>
+        </br>
+      </div>
+
+      <div class="container">
+          <div id="ae"><h2>Accordion Example</h2></div>
+          <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  Collapsible Group Item #1
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                Collapsible Group Item #2
+              </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                  Collapsible Group Item #3
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <div class="container">
+                    <h2>Pill Badges</h2>
+                    <span class="badge badge-pill badge-primary">Primary</span>
+                    <span class="badge badge-pill badge-secondary">Secondary</span>
+                    <span class="badge badge-pill badge-success">Success</span>
+                    <span class="badge badge-pill badge-danger">Danger</span>
+                    <span class="badge badge-pill badge-warning">Warning</span>
+                    <span class="badge badge-pill badge-info">Info</span>
+                    <span class="badge badge-pill badge-light">Light</span>
+                    <span class="badge badge-pill badge-dark">Dark</span>
+                  </div>
       
       <div class="container">
           <div class="row">
-              <div class="col-sm-1">
-                  <h3 id="c1">Column 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-              <div class="col-sm-1">
-                  <h3 id="c1">Column 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-              <div class="col-sm-1">
-                  <h3 id="c1">Column 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-              <div class="col-sm-1">
-                  <h3 id="c1">Column 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-              <div class="col-sm-1">
-                  <h3 id="c1">Column 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-              <div class="col-sm-1">
-                  <h3 id="c1">Column 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-              <div class="col-sm-1">
-                  <h3 id="c1">Column 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-              <div class="col-sm-1">
-                  <h3 id="c1">Column 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-             </div>
+            <div  id ="d1"class="col-sm-4">
+              <h3 id="c1">Column 1</h3>
+              <h1>h1 Bootstrap heading (2.5rem = 40px)</h1>
+              <h2>h2 Bootstrap heading (2rem = 32px)</h2>
+            </div>
+            <div id ="d1" class="col-sm-4">
+              <h3>Column 2</h3>
+              <h1 class="display-1">Display 1</h1>
+              <h1 class="display-2">Display 2</h1>
+              
+            </div>
+            <div id ="d1" class="col-sm-4">
+              <h3>Column 3</h3>        
+              <h1>h1 heading <small>secondary text</small></h1>
+            </div>
           </div>
+        </div>
+        
+        <div class="container">
+        <div class="row">
+            <div id ="d1" class="col-sm-4">
+                <h3 id="c1">Column 1</h3>
+                <h1>Highlight Text</h1>    
+                <p>Use the mark element to <mark>highlight</mark> text.</p>
+            </div>
+            <div id ="d1" class="col-sm-8">
+                <h3 id="c1">Column 1</h3>
+                <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+                <blockquote class="blockquote">
+                      <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+                      <footer class="blockquote-footer">From WWF's website</footer>
+                    </blockquote>
+            </div>
+          </div>
+        </div>
+        
+        
+            <div class = "container2">
 
-</body>
-</html>
+              <div class = "row"> 
+                      <div id ="d1" class="col-sm-6">
+                              <h3 id="c1">Column 1</h3>
+                              <dl>
+                              <dt>Coffee</dt>
+                              <dd>- black hot drink</dd>
+                              <dt>Milk</dt>
+                              <dd>- white cold drink</dd>
+                              </dl>
+                              <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>     
+                          </div>
+                          <div id ="d1" class="col-sm-6">
+                              <h3 id="c1">Column 1</h3>
+                              <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+                              <pre>
+                              Text in a pre element
+                              is displayed in a fixed-width
+                              font, and it preserves
+                              both      spaces and
+                              line breaks.
+                              </pre>
+                          </div>
+              </div>      
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" style="width:40%"></div>
+              </div>
+
+            
+            <div class="container">
+            <div class="Tablecontainer">
+                  <img src="s-l1600 (1).jpg" class="rounded" alt="Cinque Terre" width="350" height="300">
+                  <img src="s-l1600.jpg" class="rounded" alt="Cinque Terre" width="304" height="236">
+                  <img src="s-l1600 (1).jpg" class="rounded" alt="Cinque Terre" width="400" height="300">  
+                  <h2>Basic Table</h2>
+                  <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>            
+                  <p>Contextual classes can be used to color the table, table rows or table cells. The classes that can be used are: .table-primary, .table-success, .table-info, .table-warning, .table-danger, .table-active, .table-secondary, .table-light and .table-dark:</p> 
+                  <table class="table table-striped table-bordered table-hover ">   
+                    <thead>
+                      <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="container">
+                <h2>Alerts</h2>
+                <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+                <div class="alert alert-success">
+                  <strong>Success!</strong> This alert box could indicate a successful or positive action.
+                </div>
+                <div class="alert alert-info">
+                  <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+                </div>
+                <div class="alert alert-warning">
+                  <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+                </div>
+                <div class="alert alert-danger">
+                  <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+                </div>
+                <div class="alert alert-primary">
+                  <strong>Primary!</strong> Indicates an important action.
+                </div>
+                <div class="alert alert-secondary">
+                  <strong>Secondary!</strong> Indicates a slightly less important action.
+                </div>
+                <div class="alert alert-dark">
+                  <strong>Dark!</strong> Dark grey alert.
+                </div>
+                <div class="alert alert-light">
+                  <strong>Light!</strong> Light grey alert.
+                </div>
+              </div>
+          
+  </body>
+  </html>
